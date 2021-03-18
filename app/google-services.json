@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1078845030737",
+    "project_id": "sifper-fbb78",
+    "storage_bucket": "sifper-fbb78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078845030737:android:35f96f12da83530f939370",
+        "android_client_info": {
+          "package_name": "com.example.sifper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078845030737-u6vv5t7at10bvc4nta78s9e6c2dh3gi3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sifper",
+            "certificate_hash": "32aa1ff6cd47b6e080c01d8968d6825aaba5088a"
+          }
+        },
+        {
+          "client_id": "1078845030737-sku7hr2hdom6jcbh04nqisej7qap3r6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbuWbieWG6Mz9pQ5u8xZOdlsj323k6xUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078845030737-sku7hr2hdom6jcbh04nqisej7qap3r6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
