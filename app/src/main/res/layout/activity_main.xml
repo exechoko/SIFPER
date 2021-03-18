@@ -1,97 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/black">
+    android:background="@drawable/prueba_logo"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="100dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/per_sin_fondo" />
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ovalo"
+        android:text="Iniciar sesion"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:visibility="visible" />
 
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_below="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="50dp">
+    <EditText
+        android:id="@+id/password"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:backgroundTint="@android:color/white"
+        android:drawableTint="@color/white"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_background"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <Button
+        android:id="@+id/bt_registrarse"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rectangulo"
+        android:text="Registrarse"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
 
-            <EditText
-                android:id="@+id/lp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_margin="15dp"
-                android:padding="12dp"
-                android:autofillHints=""
-                android:background="@drawable/edit_round"
-                android:hint="Legajo Personal"
-                android:textAlignment="center"
-                android:inputType="textEmailAddress"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#FFFFFF" />
+    <EditText
+        android:id="@+id/lp"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:autofillHints=""
+        android:backgroundTint="@android:color/white"
+        android:hint="Legajo Personal"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <!--Login Button -->
-
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/email"
-                android:layout_marginTop="20dp"
-                android:layout_margin="15dp"
-                android:padding="12dp"
-                android:autofillHints=""
-                android:background="@drawable/edit_round"
-                android:hint="Contraseña"
-                android:textAlignment="center"
-                android:inputType="textPassword"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#FFFFFF" />
-
-
-
-
-
-        </LinearLayout>
-
-    </ScrollView>
-
+    <Button
+        android:id="@+id/bt_olvido"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:text="Olvido contraseña?"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        app:lottie_imageAssetsFolder="assets"
-        app:lottie_fileName="2128-fingerprint.json"
-        app:lottie_loop="true"
         android:layout_centerInParent="true"
-        app:lottie_autoPlay="true"
         android:layout_margin="10dp"
-        android:visibility="gone"/>
+        android:visibility="gone"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="2128-fingerprint.json"
+        app:lottie_imageAssetsFolder="assets"
+        app:lottie_loop="true"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="215dp"
+        tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="40dp"
-        android:layout_margin="25dp"
-        android:background="@drawable/button_round"
-        android:backgroundTint="#2196F3"
-        android:text="INGRESAR"
-        android:textColor="@color/white" />
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

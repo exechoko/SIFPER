@@ -1,3 +1,76 @@
 <resources>
     <string name="app_name">SIFPER</string>
+
+    <!--manera para el menu-->
+    <string name="cuenta">cuenta</string>
+    <string name="ajustes">ajustes</string>
+    <string name="acerca_de">acerca de</string>
+
+
+    <!-- manera para agregar lista al spinner-->
+    <string-array name="jerarquias">
+        <item>AGENTE</item>
+        <item>CABO</item>
+        <item>CABO PRIMERO</item>
+        <item>SARGENTO</item>
+        <item>SARGENTO PRIMERO</item>
+        <item>SARGENTO AYUDANTE</item>
+        <item>SUB.OF.PRINCPAL</item>
+        <item>SUB.OF.MAYOR</item>
+        <item>OF.AYUDANTE</item>
+        <item>OF.SUB.INSPECTOR</item>
+        <item>OF.INSPECTOR</item>
+        <item>OF.PRINCIPAL</item>
+        <item>SUB.COMISARIO</item>
+        <item>COMISARIO</item>
+        <item>COMISARIO PRINCIPAL</item>
+        <item>COMISARIO INSPECTOR</item>
+        <item>COMISARIO MAYOR</item>
+        <item>COMISARIO GENERAL</item>
+    </string-array>
+
+    <!--spinner divisiones-->
+    <string-array name="divisiones">
+        <item>DIVISIÓN 911 Y VIDEO VIGILANCIA</item>
+        <item>INVESTIGACIONES</item>
+        <item>CRIMINALÍSTICA</item>
+        <item>BANCARIA, SEGURIDAD URBANA</item>
+    </string-array>
+
+    <!--spinner CIUDADES-->
+    <string-array name="ciudades">
+        <item>COLÓN</item>
+        <item>CONCORDIA</item>
+        <item>DIAMANTE</item>
+        <item>FEDERACIÓN</item>
+        <item>FEDERAL</item>
+        <item>FELICIANO</item>
+        <item>GUALEGUAY</item>
+        <item>GUALEGUAYCHU</item>
+        <item>ISLAS DEL IBICUY</item>
+        <item>LA PAZ</item>
+        <item>NOGOYA</item>
+        <item>PARANÁ</item>
+        <item>SAN SALVADOR</item>
+        <item>TALA</item>
+        <item>URUGUAY</item>
+        <item>VICTORIA</item>
+        <item>VILLAGUAY</item>
+    </string-array>
+
+    <!--spinner AÑOS-->
+    <string-array name="años">
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+    </string-array>
+
 </resources>
