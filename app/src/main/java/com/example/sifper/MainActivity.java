@@ -70,12 +70,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 //Toast.makeText(LoginActivity.this, "Inicio correcto de sesion", Toast.LENGTH_SHORT).show();
-                final ProgressDialog mDialog = new ProgressDialog(MainActivity.this);
+                /*final ProgressDialog mDialog = new ProgressDialog(MainActivity.this);
                 mDialog.setMessage("Por favor espere...");
-                mDialog.show();
+                mDialog.show();*/
+
+                mAnimation.playAnimation();
+                mAnimation.setVisibility(View.VISIBLE);
 
                 if (inputLP.getText().toString().equals("") || inputPassword.getText().toString().equals("")){
-                    mDialog.dismiss();
+                    //mDialog.dismiss();
+
+                    mAnimation.cancelAnimation();
+                    mAnimation.setVisibility(View.GONE);
+
                     AlertDialog.Builder alerta = new AlertDialog.Builder(MainActivity.this);
                     alerta.setMessage("Por favor complete todos los campos")
                             .setCancelable(false)
@@ -95,7 +102,11 @@ public class MainActivity extends AppCompatActivity {
                             //check if user noy exist in database
                             if (dataSnapshot.child(inputLP.getText().toString()).exists()) {
                                 //get user information
-                                mDialog.dismiss();
+                                //mDialog.dismiss();
+
+                                mAnimation.cancelAnimation();
+                                mAnimation.setVisibility(View.GONE);
+
                                 User user = dataSnapshot.child(inputLP.getText().toString()).getValue(User.class);
                                 user.setLp(inputLP.getText().toString()); // Set LP
                                 if (user.getPassword().equals(inputPassword.getText().toString())) {
@@ -110,7 +121,11 @@ public class MainActivity extends AppCompatActivity {
                                     Toast.makeText(MainActivity.this, "Fallo el ingreso", Toast.LENGTH_SHORT).show();
                                 }
                             } else {
-                                mDialog.dismiss();
+                                //mDialog.dismiss();
+
+                                mAnimation.cancelAnimation();
+                                mAnimation.setVisibility(View.GONE);
+
                                 Toast.makeText(MainActivity.this, "El usuario no existe", Toast.LENGTH_SHORT).show();
                             }
 
