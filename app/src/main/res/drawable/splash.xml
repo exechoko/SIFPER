@@ -4,6 +4,6 @@
     <item>
         <bitmap
             android:gravity="fill"
-            android:src="@drawable/fondo_sifper"/>
+            android:src="@drawable/prueba_logo"/>
     </item>
 </layer-list>
