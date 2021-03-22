@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SIFPER">
         <activity
+            android:name=".ActivityPrincipal"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/Theme.SIFPER.NoActionBar"></activity>
+        <activity
             android:name=".MainActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>

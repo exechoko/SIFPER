@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <TextView
+        android:id="@+id/extension_de_toolbar"
+        android:layout_width="412dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/cabeza_background"
+        android:gravity="center"
+        android:text="¡Bienvenid@!"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/button"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/logo_adicionales"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/button2"
+                    app:layout_constraintTop_toBottomOf="@id/guideline"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/button2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/gob_rios"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintLeft_toRightOf="@+id/button"
+                    app:layout_constraintTop_toBottomOf="@id/guideline"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/button3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/logo_adicionales"
+                    app:layout_constraintTop_toBottomOf="@id/guideline"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintLeft_toRightOf="@id/button2" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/button4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/gob_rios"
+                    app:layout_constraintTop_toBottomOf="@id/guideline"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintLeft_toRightOf="@id/button3" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/button5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/gob_rios"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/button" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/button6"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/logo_adicionales"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintLeft_toRightOf="@+id/button5"
+                    app:layout_constraintTop_toBottomOf="@id/button2"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/button7"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/gob_rios"
+                    app:layout_constraintTop_toBottomOf="@id/button3"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintLeft_toRightOf="@id/button6" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/button8"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="1dp"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/logo_adicionales"
+                    app:layout_constraintTop_toBottomOf="@id/button4"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintLeft_toRightOf="@id/button7" />
+
+                <!--Button
+                    android:id="@+id/button9"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="Button"
+                    app:layout_constraintDimensionRatio="H,1:1"
+                    app:layout_constraintLeft_toRightOf="@+id/button"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/button2" /-->
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="80dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!--Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Button"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="683dp" /-->
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        app:cardBackgroundColor="#E3F3E8"
+                        app:cardCornerRadius="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/relativeLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/imageView13"
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/notas" />
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="75dp"
+                                android:text="Notas"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageView13" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        app:cardBackgroundColor="#FFE4D9"
+                        app:cardCornerRadius="10dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/relativeLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView12"
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/licencias" />
+
+                            <TextView
+                                android:id="@+id/txt_licencias"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:text="Licencias"
+                                android:textColor="#FFFFFF"
+                                android:textSize="18sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageView12" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        app:cardBackgroundColor="#FCEFCD"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="100dp"
+                                android:layout_height="120dp"
+                                app:srcCompat="@drawable/comisaria" />
+
+                            <TextView
+                                android:id="@+id/txt_dependencias"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginEnd="5dp"
+                                android:text="Dependencias"
+                                android:textColor="#FFFFFF" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        app:cardBackgroundColor="#E7F5F6"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/adicional" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        app:cardBackgroundColor="#F3EEF5"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/gob_rios" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

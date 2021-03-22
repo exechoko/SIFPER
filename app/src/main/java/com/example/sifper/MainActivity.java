@@ -111,12 +111,12 @@ public class MainActivity extends AppCompatActivity {
                                 user.setLp(inputLP.getText().toString()); // Set LP
                                 if (user.getPassword().equals(inputPassword.getText().toString())) {
                                     Toast.makeText(MainActivity.this, "Ingreso correctamente", Toast.LENGTH_SHORT).show();
-                                    /*{
-                                        Intent homeIntent = new Intent(MainActivity.this,CasaActivity.class);
+                                    {
+                                        Intent homeIntent = new Intent(MainActivity.this,ActivityPrincipal.class);
                                         Common.currentUser = user;
                                         startActivity(homeIntent);
                                         finish();
-                                    }*/
+                                    }
                                 } else {
                                     Toast.makeText(MainActivity.this, "Fallo el ingreso", Toast.LENGTH_SHORT).show();
                                 }
