@@ -15,8 +15,9 @@
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/ovalo"
+        android:backgroundTint="#C60071C6"
         android:text="Iniciar sesion"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
@@ -31,22 +32,22 @@
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:autofillHints=""
-        android:backgroundTint="@android:color/white"
-        android:drawableTint="@color/white"
+        android:backgroundTint="@color/black"
+        android:drawableTint="@color/black"
         android:hint="Contraseña"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         android:textAlignment="center"
         android:inputType="textPassword"
         android:textAllCaps="true"
-        android:textColor="@color/design_default_color_background"
-        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lp" />
 
-    <Button
+    <!--Button
         android:id="@+id/bt_registrarse"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="300dp"
@@ -55,11 +56,11 @@
         android:background="@drawable/rectangulo"
         android:text="Registrarse"
         android:textAllCaps="false"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" /-->
 
     <EditText
         android:id="@+id/lp"
@@ -68,15 +69,15 @@
         android:layout_height="50dp"
         android:layout_marginTop="250dp"
         android:autofillHints=""
-        android:backgroundTint="@android:color/white"
+        android:backgroundTint="@color/black"
         android:hint="Legajo Personal"
         android:textAlignment="center"
         android:inputType="number"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textColorLink="@color/white"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,16 +88,16 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@android:color/transparent"
+        android:layout_marginTop="50dp"
+        android:background="#22000000"
         android:text="Olvido contraseña?"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
-    <com.airbnb.lottie.LottieAnimationView
+    <!--com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation"
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -110,6 +111,6 @@
         app:lottie_autoPlay="true"
         app:lottie_fileName="2128-fingerprint.json"
         app:lottie_imageAssetsFolder="assets"
-        app:lottie_loop="true" />
+        app:lottie_loop="true" /-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
