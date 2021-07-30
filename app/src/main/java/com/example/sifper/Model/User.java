@@ -7,6 +7,7 @@ public class User {
     private String correo;
     private String IsStaff;
 
+
     public User() {
     }
 
